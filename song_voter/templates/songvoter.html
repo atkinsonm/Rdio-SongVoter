@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Welcome to SongVoter, powered by Rdio&reg</title>
+		<script src="//www.rdio.com/api/api.js?client_id=xw5MABzW2V4f33RX5LMxGg"></script>
+		<script type="text/javascript">
+
+		R.ready(function() {
+        if(!R.authenticated()) {
+        	R.authenticate(function (authenticated) {
+        		if (authenticated) {
+            		document.write("YEAH!");
+          		}
+        	});
+      	});
+
+      	/*var playlistKeys[];
+      	var i = 0;
+
+      	for each (var playlist in R.currentUser.stations) {
+      		document.write(playlist.name);
+      		playlistKeys[i] = playlist.key;
+      		i++;
+      	}
+
+      	// Take over as main playing app
+      	R.startMasterTakeover();
+
+      	//R.player.play(/*playlist source*/);
+
+      	// push song into queue
+      	//R.player.queue.addPlayingSource()*/
+
+
+      	</script>
+	</head>
+
+	<body>
+		<h1><center>Welcome to SongVoter!</center></h1>
+		<h3 style="color:#737373;"><center>Powered by Rdio&reg</center></h3>
+
+		<p>DISCLAIMER: This app was designed and created by Michael Meluso. This app is in no way affiliated or endorsed by Rdio, Inc., and is a not-for-profit, independent project. By using this app you allow access to basic information including but not limited to your account name, playlists, and listening history. <a href="mailto:melusom2@tcnj.edu">Contact Michael Meluso</a> for questions or concerns.</p>
+	</body>
+</html>
